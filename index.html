@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Course Organizer</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Home | CarZone</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">My Courses</a></li>
-                <li><a href="add-course.html">Add Course</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Welcome to Your Course Organizer</h1>
-            <p>Manage your academic life efficiently. View your current enrollment, add new subjects, and keep track of your credits all in one place.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Personal Course Organizer by A.E</p>
-    </footer>
+  <header>
+    <nav>
+      <h1>Car<span>Zone</span></h1>
+      <ul>
+        <li><a href="index.html" title="Go to home page" class="active">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="offers.html">Today's Deals</a></li>
+        <li><a href="compare.html">Compare</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <button class="btntoogle" onclick="toggleTheme()">🌙/☀️</button>
+       
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="enter">
+      <h2>Find Your Dream Car</h2>
+      <a href="cars.html"><button>Browse Cars</button></a>
+    </div>
+    <div class="section">
+      <h2>Categories</h2>
+      <div class="categories">
+        <div class="category" >SUV</div>
+        <div class="category">Sedan</div>
+        <div class="category">Electric</div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Featured Cars</h2>
+      <div class="cars">
+      <div class="car-card">
+        <img src="img/lambo.jpg" alt="Lamborghini Huracán">
+        <h3 class="name" id="Lamborghini Huracán">Lamborghini Huracán</h3>
+        <p>16,822,700 EGP</p>
+        <button class="carbtn" onclick="showDetails('Lamborghini Huracán',16822700,'Model: 2026<br>Engine:5.2-liter (5,204 cc) naturally aspirated V10 engine<br>Power: 631 horsepower<br>Torque: 442 N⋅m<br>Acceleration(0–100 km/h): 2.8 seconds<br>Seats:2 <br>Drive Type:RWD','img/lambo.jpg')">view detailes</button>
+      </div>
+        <div class="car-card">
+        <img src="img/Porche.jpeg" alt="Porsche 911 GT3">
+        <h3 class="name" id="Porsche 911 GT3">Porsche 911 GT3</h3>
+        <p>18,500,000 EGP</p>
+        <button class="carbtn" onclick="showDetails('Porsche 911 GT3',18500000,'Model: 2026<br>Engine:4.0-liter (3,996 cc) naturally aspirated flat-six engine<br>Power: 503 horsepower<br>Torque: 450 N⋅m<br>Acceleration(0–100 km/h): 3.4 seconds<br>Seats:2 <br>Drive Type:RWD','img/Porche.jpeg')">view detailes</button>
+      </div>
+         <div class="car-card">
+        <img src="img/bugatti.jpg" alt="Bugatti Chiron">
+        <h3 class="name" id="Bugatti Chiron">Bugatti Chiron</h3>
+        <p>160,939,203.00 EGP</p>
+        <button class="carbtn" onclick="showDetails('Bugatti Chiron',160939203.00,'Model: 2026<br>Engine:8.0-liter (7,993 cc) naturally aspirated W16 engine<br>Power: 1,500 horsepower<br>Torque: 1,180 N⋅m<br>Acceleration(0–100 km/h): 2.4 seconds<br>Seats:2 <br>Drive Type:RWD','img/bugatti.jpg')">view detailes</button>
+      </div>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy 2026 CarZone | All Rights Reserved</p>
+  </footer>
+  <script src="scripts/js.js"></script>
 </body>
 </html>
