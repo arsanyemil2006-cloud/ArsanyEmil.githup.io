@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let value = searchInput.value.toLowerCase();
 
-    //  غيرنا car لـ car-card
     let cars = document.querySelectorAll(".car-card");
 
     cars.forEach(function (car) {
