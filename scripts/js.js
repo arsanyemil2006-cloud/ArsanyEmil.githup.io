@@ -54,7 +54,7 @@ function showDetails(name, price, desc, imgSrc) {
   newTab.document.close();
 }
 
-// ❌ إغلاق التفاصيل
+//  إغلاق التفاصيل
 function closeDetails() {
   document.getElementById("detailsBox").classList.add("hidden");
 }
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let value = searchInput.value.toLowerCase();
 
-    // 👇 غيرنا car لـ car-card
+    //  غيرنا car لـ car-card
     let cars = document.querySelectorAll(".car-card");
 
     cars.forEach(function (car) {
